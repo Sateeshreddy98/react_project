@@ -9,7 +9,7 @@ export default function Popularoffers() {
 
     function Popularofferscard({ details }) {
         return (
-            <div className="group w-full lg:h-89 border bg-white border-white flex flex-col rounded-xl transition-all duration-700 ease-in-out">
+            <div className="group w-full lg:h-89 border bg-white border-white flex flex-col rounded-xl transition-all duration-700 ease-in-out overflow-hidden">
                 <div className="relative w-full h-[50%] transition-all duration-700 ease-in-out group-hover:h-[40%]">
                     <img src={details.src} alt={details.alt} className="w-full h-full object-fit rounded-xl" />
                     <div className="absolute w-12 h-12 lg:w-20 lg:h-20 left-3 -bottom-3 z-10">
@@ -34,7 +34,7 @@ export default function Popularoffers() {
 
     return (
         <section className="w-full bg-[#F7F7F8]">
-            <div className="w-full max-w-312 px-6 py-12 mx-auto flex flex-col gap-5">
+            <div className="w-full max-w-312 px-6 lg:px-0 py-12 mx-auto flex flex-col gap-5">
                 <h1 className="text-base lg:text-4xl font-sans font-semibold"> Popular Offers of the Day</h1>
                 <div className="grid grid-cols-2 grid-rows-2 lg:flex lg:flex-row gap-4">
                     {Popularofferscard_details.map((details, index) => (

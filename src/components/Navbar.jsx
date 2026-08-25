@@ -8,7 +8,7 @@ export default function Navbar(){
     const navLinkLeftClass ="h-[80%] inline-flex items-center py-2 px-2.5 gap-1 hover:text-[#3E80DD] hover:bg-[#E3EDFC] hover:underline hover:cursor-pointer rounded-sm";
 
     return(
-        <header className=" w-full box-borde bg-white sticky top-0 z-50">
+        <header className=" w-full box-border bg-white sticky top-0 z-50">
             <div className="max-h-16.5 max-w-312 mx-auto hidden lg:flex justify-start items-center py-4 box-border">
                 <div className="flex w-3/4 items-center gap-6">
                     <a href="#" className="inline-block h-full"><img src="https://cdn.grabon.in/gograbon/logo/GrabOn-Logo.svg" alt="GrabOn logo" className="w-40 h-9 bg-transparent"/></a>

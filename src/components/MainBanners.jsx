@@ -34,7 +34,7 @@ export default function MainBanners() {
     }, [currentIndex, isPaused, banners.length]);
 
     return (
-        <section className="w-full mt-5">
+        <section className="w-full mt-5 px-6 lg:px-0">
             <div className="w-full max-w-312 flex flex-col lg:flex-row gap-6 mx-auto">
                 <div className="w-full lg:w-3/4 overflow-hidden rounded-lg" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
                     <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

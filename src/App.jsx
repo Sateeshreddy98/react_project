@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import MainBanners from "./components/MainBanners";
 import Popularoffers from "./components/Popularoffers";
+import Popularstores from "./components/Popularstores";
+import Todays_top_coupons from "./components/Todays_top_coupons";
 
 export default function App() {
   return (
@@ -9,8 +11,9 @@ export default function App() {
       <main className="flex flex-col">
         <MainBanners />
         <Popularoffers />
-      </main>
-      
+        <Popularstores />
+        <Todays_top_coupons />
+      </main>  
     </div>
   );
 }
