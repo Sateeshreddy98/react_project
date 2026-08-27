@@ -97,8 +97,8 @@ export default function Popularstores(){
     }
 
     return(
-        <section className="w-full bg-white">
-            <div className="w-full max-w-312 px-6 lg:px-0 py-12 m-auto flex flex-col gap-6">
+        <section className="w-full bg-white py-12">
+            <div className="w-full max-w-312 px-6 xl:px-0 m-auto flex flex-col gap-6">
                 <div className="w-full max-w-312 flex">
                     <h1 className="text-base lg:text-4xl font-sans font-semibold whitespace-nowrap"> Popular Stores </h1>
                     <div className="w-full inline-flex items-center justify-end gap-2">

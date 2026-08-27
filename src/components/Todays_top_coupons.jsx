@@ -152,10 +152,10 @@ export default function Todays_top_coupons(){
     }
 
     return(
-        <section className="w-full bg-[#F7F7F8]">
-            <div className="w-full max-w-312 px-6 lg:px-0 py-12 mx-auto flex flex-col gap-5">
-                <a href="#"><img src="https://cdn.grabon.in/gograbon/images/banners/banner-1787204573014.jpg" alt="" className="rounded-xl "/></a>
-                <h1 className="text-[32px] text-[#191F2E] font-bold font-sans">Today's Top Coupons & Offers</h1>
+        <section className="w-full bg-[#F7F7F8] py-12">
+            <div className="w-full max-w-312 px-6 xl:px-0  mx-auto flex flex-col gap-5">
+                <a href="#"><img src="https://cdn.grabon.in/gograbon/images/banners/banner-1787204573014.jpg" alt="" className="rounded-xl h-15 lg:h-auto"/></a>
+                <h1 className="text-base lg:text-[32px] text-[#191F2E] font-bold font-sans">Today's Top Coupons & Offers</h1>
                 <div className="w-full flex flex-row overflow-scroll scrollbar-none gap-3">
                     {button_details.map((details)=>(
                         <Top_coupons_buttons
@@ -173,8 +173,8 @@ export default function Todays_top_coupons(){
                     ))}
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-[32px] font-semibold font-sans">Trending Offer</h1>
-                    <a href="#"><img src="https://cdn.grabon.in/gograbon/images/union/1787210229512.jpg" alt="" className="rounded"/></a>
+                    <h1 className="text-base lg:text-[32px] font-semibold font-sans">Trending Offer</h1>
+                    <a href="#"><img src="https://cdn.grabon.in/gograbon/images/union/1787210229512.jpg" alt="" className="rounded-xl h-15 lg:h-auto"/></a>
                 </div>
             </div>
             

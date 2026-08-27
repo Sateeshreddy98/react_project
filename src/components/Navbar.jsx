@@ -9,7 +9,7 @@ export default function Navbar(){
 
     return(
         <header className=" w-full box-border bg-white sticky top-0 z-50">
-            <div className="max-h-16.5 max-w-312 mx-auto hidden lg:flex justify-start items-center py-4 box-border">
+            <div className="max-h-16.5 max-w-312 mx-auto hidden lg:flex justify-start items-center py-4 box-border px-6 xl:px-0">
                 <div className="flex w-3/4 items-center gap-6">
                     <a href="#" className="inline-block h-full"><img src="https://cdn.grabon.in/gograbon/logo/GrabOn-Logo.svg" alt="GrabOn logo" className="w-40 h-9 bg-transparent"/></a>
                     <div className="relative h-full w-full max-w-168.5">
@@ -28,7 +28,7 @@ export default function Navbar(){
                 </div>
             </div>
             <hr className="w-full border-t-[#47465327]"/>
-            <nav className=" hidden lg:flex  max-w-312 w-full mx-auto py-2.5 h-16.5 ">
+            <nav className=" hidden lg:flex  max-w-312 w-full mx-auto py-2.5 h-16.5 px-6 xl:px-0">
                 <div className="navbar-items flex w-full justify-between">                  
                     <div className="left-navbar flex justify-center items-center">
                         {navLeftItems.map(({ icon, label }) => (

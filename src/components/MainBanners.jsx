@@ -34,17 +34,19 @@ export default function MainBanners() {
     }, [currentIndex, isPaused, banners.length]);
 
     return (
-        <section className="w-full mt-5 px-6 lg:px-0">
-            <div className="w-full max-w-312 flex flex-col lg:flex-row gap-6 mx-auto">
+        <section className="w-full mt-5 ">
+            <div className="w-full max-w-312 flex flex-col lg:flex-row px-6 xl:px-0 gap-6 mx-auto">
                 <div className="w-full lg:w-3/4 overflow-hidden rounded-lg" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
                     <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {banners.map((banner) => (
-                            <img
-                                key={banner.brand}
+                            <a key={banner.brand}  href="" className="w-full shrink-0">
+                                <img
                                 src={banner.src}
                                 alt={banner.alt}
                                 className="h-auto w-full shrink-0 rounded-lg"
                             />
+                            </a>
+                            
                         ))}
                     </div>
                 </div>
@@ -60,7 +62,7 @@ export default function MainBanners() {
                     ))}
                 </div>
             </div>
-            <div className="w-full max-w-312 flex flex-col lg:flex-row gap-6 mx-auto">
+            <div className="w-full max-w-312 flex flex-col lg:flex-row gap-6 mx-auto px-6 lg:px-0">
                 <div className="w-full lg:w-3/4 flex justify-evenly items-start overflow-scroll lg:overflow-hidden scrollbar-none border border-[#f0f0fc] bg-white rounded-b-[20px]">
                     {banners.map((brandnames) => (
                         <button className="py-3.5 px-5 cursor-pointer text-base shrink-0">
@@ -69,14 +71,13 @@ export default function MainBanners() {
                     ))}
                 </div>
                 <div className="hidden lg:flex w-full lg:w-1/4 flex-row gap-4 overflow-hidden">
-
                 </div>
             </div>
             <div className="w-full mt-6 py-4.5 px-6 text-center bg-white">
-                <p className="text-sm font-semibold flex justify-center items-center gap-2 ">
-                    <img src="https://cdn.grabon.in/gograbon/v8/icons/home-head-left.svg" alt="" /> 
+                <p className="text-sm lg:text-base lg:font-semibold flex justify-center items-center gap-2 ">
+                    <img src="https://cdn.grabon.in/gograbon/v8/icons/home-head-left.svg" alt="" className=" h-1.5 w-5 lg:h-auto lg:w-auto" /> 
                         India's Leading Coupons & Deals Marketplace 
-                    <img src="https://cdn.grabon.in/gograbon/v8/icons/home-head-right.svg" alt="" /></p>
+                    <img src="https://cdn.grabon.in/gograbon/v8/icons/home-head-right.svg" alt="" className="h-1.5 w-5 lg:h-auto lg:w-auto" /></p>
             </div>
         </section>
     );

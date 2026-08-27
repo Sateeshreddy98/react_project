@@ -33,8 +33,8 @@ export default function Popularoffers() {
     }
 
     return (
-        <section className="w-full bg-[#F7F7F8]">
-            <div className="w-full max-w-312 px-6 lg:px-0 py-12 mx-auto flex flex-col gap-5">
+        <section className="w-full bg-[#F7F7F8] py-12 ">
+            <div className="w-full max-w-312 px-6 xl:px-0 mx-auto flex flex-col gap-5">
                 <h1 className="text-base lg:text-4xl font-sans font-semibold"> Popular Offers of the Day</h1>
                 <div className="grid grid-cols-2 grid-rows-2 lg:flex lg:flex-row gap-4">
                     {Popularofferscard_details.map((details, index) => (
