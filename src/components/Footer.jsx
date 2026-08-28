@@ -26,8 +26,8 @@ export default function Footer(){
                             a better place to shop with great savings! 
                         </p>
                         <div className="flex flex-row gap-3 *:h-12">
-                            <a href=""><img src="https://cdn.grabon.in/gograbon/images/v5/badge_android.png" alt="" /></a>
-                            <a href=""><img src="https://cdn.grabon.in/gograbon/images/v5/badge_ios.png" alt="" /></a>
+                            <a href=""><img src="https://cdn.grabon.in/gograbon/images/v5/badge_android.png" alt=""  loading="lazy"/></a>
+                            <a href=""><img src="https://cdn.grabon.in/gograbon/images/v5/badge_ios.png" alt="" loading="lazy" /></a>
                         </div>
                         <ul className="flex flex-wrap justify-start gap-2.5 w-63">
                             {Social_icons.map((icons) => (
@@ -79,9 +79,12 @@ export default function Footer(){
                                 </span>
                             </a>
                             <a href="" className="flex justify-center items-center bg-blue-500 ml-5.5 rounded-lg">
-                                <img src="" alt="" />
-                                <span className="flex flex-row items-center justify-center gap-2 p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none"> <path d="M2.2168 13.4376C2.2168 11.5522 4.05346 11.082 5.89013 11.082V19.347C4.9159 19.347 3.98157 18.96 3.29269 18.2711C2.60381 17.5823 2.2168 16.6479 2.2168 15.6737V13.4376Z" stroke="white" stroke-width="1.83667" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.88965 19.3457V10.1623C5.88965 8.701 6.47016 7.29951 7.50349 6.26619C8.53682 5.23286 9.93831 4.65234 11.3996 4.65234C12.861 4.65234 14.2625 5.23286 15.2958 6.26619C16.3291 7.29951 16.9096 8.701 16.9096 10.1623V19.3457" stroke="white" stroke-width="1.83667" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.5835 13.4376C20.5835 11.5522 18.7468 11.082 16.9102 11.082V19.347C17.8844 19.347 18.8187 18.96 19.5076 18.2711C20.1965 17.5823 20.5835 16.6479 20.5835 15.6737V13.4376Z" stroke="white" stroke-width="1.83667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                               <span className="flex flex-row items-center justify-center gap-2 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                        <path d="M2.2168 13.4376C2.2168 11.5522 4.05346 11.082 5.89013 11.082V19.347C4.9159 19.347 3.98157 18.96 3.29269 18.2711C2.60381 17.5823 2.2168 16.6479 2.2168 15.6737V13.4376Z" stroke="white" strokeWidth="1.83667" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M5.88965 19.3457V10.1623C5.88965 8.701 6.47016 7.29951 7.50349 6.26619C8.53682 5.23286 9.93831 4.65234 11.3996 4.65234C12.861 4.65234 14.2625 5.23286 15.2958 6.26619C16.3291 7.29951 16.9096 8.701 16.9096 10.1623V19.3457" stroke="white" strokeWidth="1.83667" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M20.5835 13.4376C20.5835 11.5522 18.7468 11.082 16.9102 11.082V19.347C17.8844 19.347 18.8187 18.96 19.5076 18.2711C20.1965 17.5823 20.5835 16.6479 20.5835 15.6737V13.4376Z" stroke="white" strokeWidth="1.83667" strokeLinecap="round" strokeLinejoin="round"></path>
+                                    </svg>
                                     Contact Us
                                 </span>
                             </a>

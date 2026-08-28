@@ -64,8 +64,8 @@ export default function MainBanners() {
             </div>
             <div className="w-full max-w-312 flex flex-col lg:flex-row gap-6 mx-auto px-6 lg:px-0">
                 <div className="w-full lg:w-3/4 flex justify-evenly items-start overflow-scroll lg:overflow-hidden scrollbar-none border border-[#f0f0fc] bg-white rounded-b-[20px]">
-                    {banners.map((brandnames) => (
-                        <button className="py-3.5 px-5 cursor-pointer text-base shrink-0">
+                   {banners.map((brandnames) => (
+                        <button key={brandnames.brand} className="py-3.5 px-5 cursor-pointer text-base shrink-0">
                             {brandnames.brand}
                         </button>
                     ))}

@@ -13,7 +13,7 @@ export default function Popularoffers() {
                 <div className="relative w-full h-[50%] transition-all duration-700 ease-in-out group-hover:h-[40%]">
                     <img src={details.src} alt={details.alt} className="w-full h-full object-fit rounded-xl" />
                     <div className="absolute w-12 h-12 lg:w-20 lg:h-20 left-3 -bottom-3 z-10">
-                        <span><img src={details.logo} alt={details.logo_alt} className="w-full h-full rounded-full" /></span>
+                        <span><img src={details.logo} alt={details.logo_alt} loading="lazy" className="w-full h-full rounded-full" /></span>
                     </div>
                 </div>
                 <div className="pt-8 px-3 pb-3 flex flex-col gap-2 transition-all duration-700 ease-in-out">

@@ -40,7 +40,7 @@ export default function Deals_of_the_day(){
                     <h1 className="text-base lg:text-[32px] text-[#191F2E] font-bold">Deals Of The Day</h1>          
                     <a href="" className="group hidden h-12 px-4 ml-auto lg:flex justify-center items-center gap-3 rounded-lg transition-all duration-700 ease-in-out hover:bg-[#E3EDFC]">
                         <span className="text-[#6d9be4] transition-all duration-700 ease-in-out group-hover:underline">View More Deals</span>
-                        <img src="https://cdn.grabon.in/gograbon/v8/icons/long-arrow-left-v2.svg"  alt=""  className="rotate-180 p-3 rounded-full bg-[#E3EDFC] transition-all ease-in-out" />
+                        <img src="https://cdn.grabon.in/gograbon/v8/icons/long-arrow-left-v2.svg"  alt=""  loading="lazy" className="rotate-180 p-3 rounded-full bg-[#E3EDFC] transition-all ease-in-out" />
                     </a>
                 </div>
                 

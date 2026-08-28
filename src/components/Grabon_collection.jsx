@@ -33,12 +33,12 @@ function Grabon_collection_card({ data }) {
         <div className="group relative grid h-66 lg:h-114 cursor-pointer grid-rows-[1fr_3fr] overflow-hidden rounded-[10px] border border-white bg-white p-1 lg:p-2">
             <div className="flex h-22.5 items-center justify-start gap-5 pl-0 lg:px-4 pb-4 pt-3">
                 <span className="rounded-full h-12.5 w-12.5 lg:h-15.5 lg:w-15.5">
-                    <img src={data.logo_src} alt={data.logo_alt} className="w-full h-full object-contain rounded-full"/>
+                    <img src={data.logo_src} alt={data.logo_alt} loading="lazy" className="w-full h-full object-contain rounded-full"/>
                 </span>
                 <span className="text-[12px] lg:text-[16px] text-[#191F2E]"> {data.brand_name} </span>
             </div>
             <div className="h-auto w-auto lg:h-87.5 lg:w-full overflow-hidden rounded-[10px]">
-                <img src={data.src} alt={data.alt } className="h-full w-full rounded-[10px] transition-transform duration-350 ease-in-out group-hover:-translate-y-2" />
+                <img src={data.src} alt={data.alt } loading="lazy" className="h-full w-full rounded-[10px] transition-transform duration-350 ease-in-out group-hover:-translate-y-2" />
             </div>
             <div className="absolute bottom-2 right-2 flex h-82.5 w-full translate-y-full flex-col items-center px-6 text-center justify-center rounded-[20px] bg-white opacity-0 invisible transition-all duration-350 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
                 <span className="text-[18px] font-bold text-[#3E80DD]"> {offers[currentOffer].title} </span>

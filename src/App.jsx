@@ -21,9 +21,7 @@ export default function App() {
         <Grabon_collection />
         <Popular_categories />
       </main> 
-      <footer>
         <Footer/>
-      </footer> 
     </div>
   );
 }

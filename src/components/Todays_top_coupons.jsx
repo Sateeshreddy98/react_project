@@ -8,7 +8,7 @@ export default function Todays_top_coupons(){
             {id:"1", src:"https://cdn.grabon.in/gograbon/images/merchant/1773381297600/igp-logo.jpg", alt:"", descrpition:"Get Flat 50% OFF On Rakhi Value Packs | Selected Items", brand_name:"IGP", offer_value:"50"},
             {id:"2", src:"https://cdn.grabon.in/gograbon/images/merchant/1773381296954/hotstar-logo.jpg", alt:"", descrpition:"Flat 6% OFF On Annual Premium Plan", brand_name:"Hotstar", offer_value:"6"},
             {id:"3", src:"https://cdn.grabon.in/gograbon/images/merchant/1773237562654/radisson-logo.jpg", alt:"", descrpition:"Resort Escapes: Stay Longer & Save Up to 35% OFF", brand_name:"Radisson", offer_value:"35"},
-            {id:"3", src:"https://cdn.grabon.in/gograbon/images/merchant/1773237644533/zee5-logo.jpg", alt:"", descrpition:"Annual Plan: Up To 58% OFF + Extra 15% OFF | Subscribe Now", brand_name:"ZEE5", offer_value:"73"},
+            {id:"4", src:"https://cdn.grabon.in/gograbon/images/merchant/1773237644533/zee5-logo.jpg", alt:"", descrpition:"Annual Plan: Up To 58% OFF + Extra 15% OFF | Subscribe Now", brand_name:"ZEE5", offer_value:"73"},
             {id:"5", src:"https://cdn.grabon.in/gograbon/images/merchant/1773381281318/amazon-logo.jpg", alt:"",  descrpition:"🔥 Deal of the Day - Up To 90% OFF Electronics, Fashion, Home & More", brand_name:"Amazon", offer_value:"90"},
             {id:"6", src:"https://cdn.grabon.in/gograbon/images/merchant/1773237605188/thebearhouse-logo.jpg", alt:"",  descrpition:"Additional 20% OFF On Your Orders Above Rs 2499", brand_name:"The Bear House", offer_name:"GRABON EXCLUSIVE"},
             // {src:"https://cdn.grabon.in/gograbon/images/merchant/1773237574186/savaari-logo.jpg", alt:"",  descrpition:"Save Up To Rs 500 On Your First Car Rental Booking", brand_name:"Savaari", offer_name:"GRABON EXCLUSIVE"},
@@ -94,11 +94,11 @@ export default function Todays_top_coupons(){
                     </div>
                     <div className="flex items-center justify-between gap-3 border-t border-gray-200 p-3">
                         <div className="flex shrink-0 items-center">
-                            <img src={card_data.src} alt={card_data.brand_name} className="h-12 w-24 object-cover rounded-lg"/>
+                            <img src={card_data.src} alt={card_data.brand_name} loading="lazy" className="h-12 w-24 object-cover rounded-lg"/>
                         </div>
                         <a href="#" className="flex items-center gap-1 text-right text-sm font-medium text-[#3f7fe0] sm:text-base">
                             <span>View All {card_data.brand_name} Coupons</span>
-                            <img src="https://cdn.grabon.in/gograbon/v8/icons/link-external-01.svg" alt="" className="h-4 w-4 shrink-0" />
+                            <img src="https://cdn.grabon.in/gograbon/v8/icons/link-external-01.svg" alt="" loading="lazy" className="h-4 w-4 shrink-0" />
                         </a>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Todays_top_coupons(){
                         </div>
                         <a href="#" className="flex min-w-0 items-center gap-1 text-right text-sm font-medium text-[#3f7fe0] sm:text-base">
                             <span className="truncate">View All {card_data.brand_name} Coupons</span>
-                            <img src="https://cdn.grabon.in/gograbon/v8/icons/link-external-01.svg" alt="" className="h-4 w-4 shrink-0"/>
+                            <img src="https://cdn.grabon.in/gograbon/v8/icons/link-external-01.svg" alt="" loading="lazy" className="h-4 w-4 shrink-0"/>
                         </a>
                     </div>
                 </div>
