@@ -80,7 +80,7 @@ export default function Popularstores(){
         return(
            <div className="group w-full h-full transition-all duration-700 ease-in-out">
                 <a href="#" className="flex w-full flex-col items-center no-underline transition-all duration-700 ease-in-out">
-                    <div className="relative flex lg:h-25.5 w-full items-center justify-center overflow-hidden rounded-[9px] border border-[#e1e4e8] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.10)] group-hover:bg-blue-400 transition-all duration-700 ease-in-out">
+                    <div className="relative flex h-18 lg:h-25.5 w-full items-center justify-center overflow-hidden rounded-[9px] border border-[#e1e4e8] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.10)] group-hover:bg-blue-400 transition-all duration-700 ease-in-out">
                         <img src={store.src} alt={store.alt} className="h-[75%] w-[75%] object-contain group-hover:hidden transition-all duration-700 ease-in-out"/>
                         <div className="hidden group-hover:flex flex-col justify-center items-center text-white transition-all duration-700 ease-in-out">
                             <p className="text-xl  font-semibold ">{store.coupons}</p>
