@@ -10,7 +10,7 @@ export default function Popularoffers() {
     function Popularofferscard({ details }) {
         return (
             <div className="group w-full lg:h-89 border bg-white border-white flex flex-col rounded-xl transition-all duration-700 ease-in-out overflow-hidden">
-                <div className="relative w-full h-[50%] transition-all duration-700 ease-in-out group-hover:h-[40%]">
+                <div className="relative w-full h-[50%] transition-all duration-700 ease-in-out lg:group-hover:h-[40%]">
                     <img src={details.src} alt={details.alt} className="w-full h-full object-fit rounded-xl" />
                     <div className="absolute w-12 h-12 lg:w-20 lg:h-20 left-3 -bottom-3 z-10">
                         <span><img src={details.logo} alt={details.logo_alt} loading="lazy" className="w-full h-full rounded-full" /></span>
@@ -20,10 +20,10 @@ export default function Popularoffers() {
                     <h4 className="text-base lg:text-2xl text-blue-500 font-bold lg:text-center"> {details.offer_name} </h4>
                     <p className="text-sm lg:text-base lg:text-center"> {details.offer_descprition} </p>
                     <button className="lg:hidden mb-1.5 text-blue-500 font-semibold"> GRAB NOW </button>
-                    <div className="flex flex-col justify-center items-center">
-                        <div className="w-full border-t border-dashed pb-2.5 my-0 mx-2 opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:max-h-10">
+                    <div className=" hidden lg:flex flex-col justify-center items-center">
+                        <div className="w-full border-t border-dashed pb-2.5 my-0 mx-2 opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out lg:group-hover:opacity-100 lg:group-hover:max-h-10">
                         </div>
-                        <button className="flex justify-center items-center w-[95%] p-2.5 px-12 my-0 mx-1.5 font-extrabold text-white rounded-lg bg-[#3E80DD] border-none cursor-pointer opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:max-h-20 group-hover:translate-y-0">
+                        <button className="flex justify-center items-center w-[95%] p-2.5 px-12 my-0 mx-1.5 font-extrabold text-white rounded-lg bg-[#3E80DD] border-none cursor-pointer opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 ease-in-out lg:group-hover:opacity-100 lg:group-hover:max-h-20 lg:group-hover:translate-y-0">
                             REDEEM NOW
                         </button>
                     </div>

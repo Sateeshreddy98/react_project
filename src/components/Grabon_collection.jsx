@@ -40,19 +40,19 @@ function Grabon_collection_card({ data }) {
             <div className="h-auto w-auto lg:h-87.5 lg:w-full overflow-hidden rounded-[10px]">
                 <img src={data.src} alt={data.alt } loading="lazy" className="h-full w-full rounded-[10px] transition-transform duration-350 ease-in-out group-hover:-translate-y-2" />
             </div>
-            <div className="absolute bottom-2 right-2 flex h-82.5 w-full translate-y-full flex-col items-center px-6 text-center justify-center rounded-[20px] bg-white opacity-0 invisible transition-all duration-350 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
-                <span className="text-[18px] font-bold text-[#3E80DD]"> {offers[currentOffer].title} </span>
-                <p className="text-center text-[16px] text-[#191F2E]">{offers[currentOffer].description} </p>
+            <div className="absolute bottom-2 lg:right-2 flex h-35 lg:h-82.5 w-full translate-y-full flex-col items-center px-2 lg:px-6 pt-2 text-center justify-center rounded-[20px] bg-white opacity-0 invisible transition-all duration-350 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+                <span className="text-sm lg:text-[18px] font-bold text-[#3E80DD]"> {offers[currentOffer].title} </span>
+                <p className="text-[12px] text-center lg:text-[16px] text-[#191F2E]">{offers[currentOffer].description} </p>
                 <div className="mt-5 flex items-center justify-center gap-6 ">
-                    <button onClick={previousOffer} className="text-[28px] font-light text-[#9CA3AF]"> ‹ </button>
+                    <button onClick={previousOffer} className="hidden lg:block text-[28px] font-light text-[#9CA3AF]"> ‹ </button>
                     <div className="flex items-center gap-2">
                         {offers.map((offer, index) => (
                             <button key={index} onClick={(e) => { e.stopPropagation(); setCurrentOffer(index); }} className={`rounded-full transition-all duration-300 ${currentOffer === index ? "h-1.5 w-7 bg-[#B4C928]" : "h-1.5 w-1.5 bg-[#9CA3AF]"}`} />
                         ))}
                     </div>
-                    <button onClick={nextOffer} className="text-[28px] font-light text-[#191F2E]"> › </button>
+                    <button onClick={nextOffer} className="hidden lg:block text-[28px] font-light text-[#191F2E]"> › </button>
                 </div>
-                <button className="mt-5 w-[90%] rounded-[5px] bg-[#3E80DD] px-8 py-2.5 text-[16px] font-semibold text-white text-center"> REDEEM </button>
+                <button className="mt-5 w-[90%] rounded-[5px] bg-[#3E80DD] px-3 lg:px-8 py-1 lg:py-2.5 text-[12px] lg:text-[16px] font-semibold text-white text-center"> REDEEM </button>
             </div>
         </div>
     )
